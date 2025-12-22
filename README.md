@@ -92,7 +92,8 @@ A lightweight web interface was developed to allow real-time text classification
 
 ---
 
-## How to Run
-```bash
-pip install -r requirements.txt
-python app.py
+## Contributors
+- **Eduardo Elías Puglisevich Vergara**  
+- Samuel Esteban Cano Chocce  
+- Nicolás Miguel Guerrero Icochea  
+
