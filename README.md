@@ -72,7 +72,7 @@ DistilBERT was fine-tuned end-to-end on raw post text, then re-tuned with an Opt
 | Logistic Regression (tuned) | 91.34% | 92.39% | 91.65% | 92.02% |
 | DistilBERT (Optuna-tuned) | **94.01%** | 93.50% | **95.64%** | **94.56%** |
 
-DistilBERT wins outright, and specifically on **recall** — the metric that matters most here, since a false negative (missing genuinely depressive language) is a more serious failure mode than a false positive in a mental-health screening context. The Logistic Regression baseline isn't obsolete despite losing on every metric, though: its coefficients are directly readable ("this word contributes +0.8 toward the depressive class"), while DistilBERT needs SHAP to get comparable — and more expensive to compute — interpretability.
+DistilBERT wins outright, and specifically on **recall** — the metric that matters most here, since a false negative (missing depressive language) is a more serious failure mode than a false positive in a mental-health screening context. The Logistic Regression baseline isn't obsolete despite losing on every metric, though: its coefficients are directly readable ("this word contributes +0.8 toward the depressive class"), while DistilBERT needs SHAP to get comparable — and more expensive to compute — interpretability.
 
 ---
 
